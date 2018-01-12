@@ -32,4 +32,20 @@ public class UserServiceImpl implements UserService {
     public Page<User> findPage(PageRequest page) {
         return userDao.findAll(page);
     }
+
+    @Override
+    public Boolean delete(Integer id) {
+        Boolean result = false;
+        userDao.delete(id);
+        result = true;
+        return result;
+    }
+
+    @Override
+    public Boolean update(User user) {
+        Boolean result = false;
+        userDao.save(user);
+        result = true;
+        return result;
+    }
 }

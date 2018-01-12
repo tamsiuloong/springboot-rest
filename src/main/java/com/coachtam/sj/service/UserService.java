@@ -12,4 +12,8 @@ public interface UserService {
     void save(User user);
 
     Page<User> findPage(PageRequest page);
+
+    Boolean delete(Integer id);
+
+    Boolean update(User user);
 }
