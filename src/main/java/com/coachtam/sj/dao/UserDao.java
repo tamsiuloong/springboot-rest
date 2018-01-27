@@ -5,10 +5,13 @@ import com.coachtam.sj.utils.Pagination;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
+import java.util.List;
+
 /**
  * @author coach tam
  * @date 2018/1/6
  */
 public interface UserDao extends PagingAndSortingRepository<User, Integer> {
 
+    List<User> findByUsername(String username);
 }

@@ -20,8 +20,13 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Override
+    public User findByUsername(String username) {
+        List<User> list = userDao.findByUsername(username);
+        return list.get(0);
+    }
 
-//    @Autowired
+    //    @Autowired
 //    private JpaRepository<User,Integer> dao;
     @Override
     public void save(User user) {
