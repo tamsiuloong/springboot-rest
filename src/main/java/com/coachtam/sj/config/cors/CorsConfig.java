@@ -1,4 +1,4 @@
-package com.coachtam.sj.web;
+package com.coachtam.sj.config.cors;
 
 import com.coachtam.sj.config.MyCorsRegistration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -41,12 +41,13 @@ public class CorsConfig {
         // 对响应头进行CORS授权
         MyCorsRegistration corsRegistration = new MyCorsRegistration("*");
         List<String> allowedOrigins = new ArrayList<>();
+        // 允许的请求来源
         allowedOrigins.add("http://localhost:8082");
         String[] objects = allowedOrigins.toArray(new String[allowedOrigins.size()]);
 
         corsRegistration
                 //允许向该服务器提交请求的URI，*表示全部允许
-                .allowedOrigins("*")
+                .allowedOrigins(objects)
                 //允许提交请求的方法，*表示全部允许
                 .allowedMethods(HttpMethod.DELETE.name(), HttpMethod.GET.name(), HttpMethod.HEAD.name(), HttpMethod.POST.name(), HttpMethod.PUT.name())
                 //允许的头信息,*标识全部允许
