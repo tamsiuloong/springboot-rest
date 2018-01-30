@@ -1,4 +1,4 @@
-package com.coachtam.sj.config;
+package com.coachtam.sj.config.shiro;
 
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;

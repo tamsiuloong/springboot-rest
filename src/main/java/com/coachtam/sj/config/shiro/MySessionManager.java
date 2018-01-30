@@ -1,4 +1,4 @@
-package com.coachtam.sj.config;
+package com.coachtam.sj.config.shiro;
 
 import org.apache.shiro.web.servlet.ShiroHttpServletRequest;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;

@@ -44,4 +44,13 @@ public class LoginController {
         }
         return resultVO;
     }
+
+
+    @RequestMapping("/logout")
+    public @ResponseBody ResultVO logout()
+    {
+        ResultVO resultVO = new ResultVO();
+        SecurityUtils.getSubject().logout();
+        return resultVO;
+    }
 }

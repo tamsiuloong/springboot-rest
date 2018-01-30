@@ -1,4 +1,4 @@
-package com.coachtam.sj.config;
+package com.coachtam.sj.config.shiro;
 
 
 import com.coachtam.sj.entity.User;
@@ -36,6 +36,8 @@ public class AuthRealm extends AuthorizingRealm {
 //        for (Role role : user.getRoleSet()) {
 //            role.getModuleSet().forEach(module -> result.addStringPermission(module.getCpermission()));
 //        }
+        result.addStringPermission("user:list");
+        result.addStringPermission("user:delete");
         return result;
     }
 

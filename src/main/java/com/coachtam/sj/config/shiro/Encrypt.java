@@ -1,4 +1,4 @@
-package com.coachtam.sj.config;
+package com.coachtam.sj.config.shiro;
 
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.context.ApplicationContext;
