@@ -1,4 +1,4 @@
-package com.coachtam.sj.config;
+package com.coachtam.sj.config.shiro;
 
 import com.alibaba.fastjson.support.spring.FastJsonJsonView;
 import org.apache.shiro.authz.UnauthenticatedException;

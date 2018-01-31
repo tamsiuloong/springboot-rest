@@ -1,6 +1,5 @@
 package com.coachtam.sj.config.shiro;
 
-import com.coachtam.sj.config.MyExceptionHandler;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;

@@ -1,0 +1,17 @@
+# cors 配置
+cors:
+  # 允许提交请求的方法，*表示全部允许
+  allowedMethods: DELETE,GET,HEAD,POST,PUT
+  # 允许的头信息,*标识全部允许
+  allowedHeaders: '*'
+  # 允许的请求来源
+  allowedOrigins:
+    - http://localhost:8082
+    - http://localhost:8083
+    - http://localhost:8084
+  # 允许Cookie跨域，在做登录校验的时候有用
+  allowCredentials: true
+  # 暴露的头信息 可选值参考 HttpHeaders注解
+  exposedHeaders: Set-Cookie
+  # 预检请求的缓存时间（秒），即在这个时间段里，对于相同的跨域请求不会再预检了
+  maxAge: 1800
